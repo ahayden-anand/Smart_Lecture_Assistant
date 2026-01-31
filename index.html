@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Lecture Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --bg-color: #111827; /* gray-900 */
+        --panel-bg-color: rgba(31, 41, 55, 0.5); /* gray-800/50 */
+        --text-color-primary: #E5E7EB; /* gray-200 */
+        --text-color-secondary: #9CA3AF; /* gray-400 */
+        --border-color: #374151; /* gray-700 */
+        --accent-color: #4F46E5; /* indigo-600 */
+        --accent-text-color: #C7D2FE; /* indigo-300 */
+        --transcript-font-size: 1rem;
+      }
+      .high-contrast {
+        --bg-color: #000000;
+        --panel-bg-color: #111111;
+        --text-color-primary: #FFFFFF;
+        --text-color-secondary: #CCCCCC;
+        --border-color: #555555;
+        --accent-color: #818CF8; /* indigo-400 */
+        --accent-text-color: #FFFFFF;
+      }
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color-primary);
+        font-size: var(--transcript-font-size);
+      }
+      @keyframes glow {
+        0% { box-shadow: 0 0 5px rgba(79, 70, 229, 0); }
+        50% { box-shadow: 0 0 20px 5px rgba(79, 70, 229, 0.6); }
+        100% { box-shadow: 0 0 5px rgba(79, 70, 229, 0); }
+      }
+      .animate-glow {
+        animation: glow 1.5s ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Smart Lecture Assistant",
+  "description": "A web application that captures microphone audio for live transcription, summarizes the content using Gemini, and allows exporting notes.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
